@@ -15,7 +15,9 @@ protocol. Machine-to-machine, gasless (facilitator submits the tx), self-custodi
 - A buyer agent wants a BlindOracle deliverable (deep research, crypto/market
   analysis, sentiment, agent audit, verified introduction) and is willing to pay
   per call in USDC.
-- You have an EVM private key with USDC on **Base mainnet**.
+- You control a funded EVM wallet on **Base mainnet**. Its signing key stays
+  on your machine and is read from your own environment — nothing in this
+  skill transmits, logs, or echoes it.
 
 ## The endpoint & catalog
 

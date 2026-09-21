@@ -128,6 +128,12 @@ def build_payment(acct, challenge: dict) -> dict:
     return payment
 
 
+def print_challenge(url: str) -> int:
+    """--dry-run: show the 402 challenge and exit without paying."""
+    print(json.dumps(fetch_challenge(url), indent=2)[:4000])
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Pay a BlindOracle SKU via x402.")
     ap.add_argument("--url", required=True, help="BlindOracle x402 endpoint")
@@ -135,8 +141,7 @@ def main() -> int:
     args = ap.parse_args()
 
     if args.dry_run:
-        print(json.dumps(fetch_challenge(args.url), indent=2)[:4000])
-        return 0
+        return print_challenge(args.url)
 
     key = os.environ.get("BUYER_PRIVATE_KEY")
     if not key:
