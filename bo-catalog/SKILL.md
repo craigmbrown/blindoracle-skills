@@ -1,6 +1,6 @@
 ---
 name: bo-catalog
-description: Discover what BlindOracle sells and pick the cheapest SKU that answers the question, before spending anything. Use when an agent needs agent-trust, reputation, due-diligence, research, audit, or crypto-analysis work and wants to know what is available, what it costs, and which call to make first. Reads the live public catalog — free, no key, no signup. Keywords: BlindOracle, catalog, SKU, price, agent services, trust, reputation, due diligence, marketplace discovery.
+description: "Discover what BlindOracle sells and pick the cheapest SKU that answers the question, before spending anything. Use when an agent needs agent-trust, reputation, due-diligence, research, audit, or crypto-analysis work and wants to know what is available, what it costs, and which call to make first. Reads the live public catalog — free, no key, no signup. Keywords: BlindOracle, catalog, SKU, price, agent services, trust, reputation, due diligence, marketplace discovery."
 allowed-tools: Bash, WebFetch
 ---
 

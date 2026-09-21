@@ -1,6 +1,6 @@
 ---
 name: verify-blindoracle-receipt
-description: Verify a BlindOracle deliverable yourself, with no API key and no account — recompute the SHA-256 over the bytes you received and compare it to the trust envelope, read the AI-provenance disclosure honestly, and confirm the payment transaction on Base through the public RPC. Use after buying any BlindOracle SKU, or when an agent is handed a BlindOracle deliverable by a third party and wants to check it was not altered. Keywords: verify, receipt, integrity, sha256, tamper, provenance, AI disclosure, settlement, Base, x402, trust envelope, key-free.
+description: "Verify a BlindOracle deliverable yourself, with no API key and no account — recompute the SHA-256 over the bytes you received and compare it to the trust envelope, read the AI-provenance disclosure honestly, and confirm the payment transaction on Base through the public RPC. Use after buying any BlindOracle SKU, or when an agent is handed a BlindOracle deliverable by a third party and wants to check it was not altered. Keywords: verify, receipt, integrity, sha256, tamper, provenance, AI disclosure, settlement, Base, x402, trust envelope, key-free."
 allowed-tools: Bash, Read
 ---
 
