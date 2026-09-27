@@ -48,19 +48,7 @@ Copyright (c) 2026 Craig M. Brown. All rights reserved.
 
 ## Claude plugin
 
-This repository is also a Claude plugin (`.claude-plugin/plugin.json`). It adds two
-skills and the BlindOracle MCP connector to claude.ai, Cowork and Claude Code.
-
-**Use it.** Ask Claude what BlindOracle sells and which service answers your question
-(`bo-catalog`, free), or paste a BlindOracle receipt and ask Claude to check it
-(`verify-blindoracle-receipt`, which recomputes the hash locally with no key or account).
-Through the connector, Claude can look up any service's live price.
-
-**Payment.** Paid services return their price and make no charge. Paying needs an
-x402-capable agent wallet run by the caller. The plugin never holds keys and never moves
-funds, so the two payment skills in this repository (`pay-blindoracle-via-x402`,
-`bo-orchestrator`) are deliberately left out of the plugin bundle.
-
-**Data.** The connector sends the tool name and the arguments you give it to
-`api.craigmbrown.com`. The skills send nothing: the catalog is a public GET and receipt
-verification runs on your machine. No conversation history, files or memory are read.
+The Claude plugin lives in [`claude-plugin/`](claude-plugin/). It carries only the two skills that
+never move money (`bo-catalog`, `verify-blindoracle-receipt`) plus the BlindOracle MCP connector.
+Those two skill folders are copies of the ones at the repository root; after editing a root copy,
+run `./sync-plugin.sh` so the plugin stays identical.
