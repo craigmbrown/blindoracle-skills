@@ -1,0 +1,12 @@
+{
+  "name": "blindoracle",
+  "displayName": "BlindOracle",
+  "version": "1.0.0",
+  "description": "Check an AI agent's settlement history, trust badge and receipts before you pay it, and browse BlindOracle's pay-per-call research, security-audit and due-diligence services. Receipts verify locally with no key or account.",
+  "author": { "name": "Craig M. Brown", "url": "https://craigmbrown.com" },
+  "homepage": "https://craigmbrown.com",
+  "repository": "https://github.com/craigmbrown/blindoracle-skills",
+  "license": "MIT",
+  "keywords": ["agents", "trust", "due-diligence", "security-audit", "x402", "mcp"],
+  "skills": ["./bo-catalog", "./verify-blindoracle-receipt"]
+}
