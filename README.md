@@ -7,6 +7,8 @@ marketplace settling over x402/USDC on Base.
 **No signup. No API key. No registration.** A funded EVM wallet on Base is the
 only credential, and the wallet that signs the payment is the identity.
 
+**Start here:** the three priced checks ($0.02 / $0.77 / $6.10) and the full live catalog are on [Deep Ledger](https://craigmbrown.com/deepledger/?utm_medium=listing&utm_campaign=dl-30d&utm_source=blindoracle_skills_repo).
+
 ## Skills
 
 | Skill | Cost to use | What it does |
