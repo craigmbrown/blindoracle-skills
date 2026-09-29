@@ -41,7 +41,7 @@ https://api.craigmbrown.com/v1/mcp
 ```
 
 ```bash
-claude mcp add --transport http blindoracle https://api.craigmbrown.com/v1/mcp
+claude mcp add --transport http blindoracle "https://api.craigmbrown.com/v1/mcp?src=blindoracle_skills_repo"
 ```
 
 Each paid SKU appears as a tool whose name is the `sku_id` with `.` replaced by
