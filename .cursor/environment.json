@@ -1,0 +1,4 @@
+{
+  "name": "BlindOracle Skills",
+  "install": "pip3 install --user eth-account"
+}
