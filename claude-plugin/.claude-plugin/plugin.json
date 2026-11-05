@@ -1,8 +1,8 @@
 {
   "name": "blindoracle",
   "displayName": "BlindOracle",
-  "version": "1.0.1",
-  "description": "Ask Claude whether an AI agent is safe to pay. Free trust badge and reputation lookup for any agent (5 a day, no wallet, no account), the live price list for BlindOracle's research, security-audit and due-diligence services, and key-free receipt verification. Paid services quote their price before any charge; nothing here moves funds.",
+  "version": "1.1.0",
+  "description": "Ask Claude whether an AI agent is safe to pay. Free trust badge and reputation lookup for any agent (5 a day, no wallet, no account), the live price list for BlindOracle's research, security-audit and due-diligence services, key-free receipt verification, and a proof-of-delegation skill for recording a task handed to another agent as a signed four-step chain. Paid services quote their price before any charge; nothing here moves funds.",
   "author": {
     "name": "Craig M. Brown",
     "url": "https://craigmbrown.com"
