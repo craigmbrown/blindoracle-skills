@@ -1,10 +1,10 @@
 #!/bin/sh
-# Copy the two money-free skills into the Claude plugin, keeping the plugin's
+# Copy the plugin skills into the Claude plugin, keeping the plugin's
 # narrowed allowed-tools lines and ${CLAUDE_SKILL_DIR} paths. Run after editing
-# bo-catalog/ or verify-blindoracle-receipt/ at the repository root.
+# bo-catalog/, verify-blindoracle-receipt/ or prove-a-delegation/ at the repository root.
 set -e
 cd "$(dirname "$0")"
-for s in bo-catalog verify-blindoracle-receipt; do
+for s in bo-catalog verify-blindoracle-receipt prove-a-delegation; do
   keep=$(grep '^allowed-tools:' "claude-plugin/skills/$s/SKILL.md")
   rm -rf "claude-plugin/skills/$s" && cp -r "$s" "claude-plugin/skills/$s"
   sed -i "s|^allowed-tools:.*|$keep|" "claude-plugin/skills/$s/SKILL.md"

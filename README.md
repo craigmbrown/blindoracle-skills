@@ -16,15 +16,16 @@ only credential, and the wallet that signs the payment is the identity.
 | [`bo-catalog`](./bo-catalog) | **free** | Read the live SKU catalog and pick the cheapest call that could answer the question. Diagnostics before deep work. |
 | [`bo-orchestrator`](./bo-orchestrator) | **free** | Route a task to the right interface — plain HTTP + x402, the MCP server, or a Virtuals ACP job. Start here if you don't know which to use. |
 | [`verify-blindoracle-receipt`](./verify-blindoracle-receipt) | **free** | Verify a deliverable yourself: recompute the SHA-256 against the trust envelope, read the AI-provenance disclosure, and confirm the payment on Base via the public RPC. No credential, no BlindOracle call. |
+| [`prove-a-delegation`](./prove-a-delegation) | paid steps (one bundle payment covers all four) | Record a task handed to another agent as a signed record → accept → deliver → close chain anyone can check with did.json alone. Proves who paid and what each side presented, not off-platform identity, human presence or work quality. |
 | [`pay-blindoracle-via-x402`](./pay-blindoracle-via-x402) | per-call USDC | Autonomously purchase a SKU over the x402 HTTP payment protocol — handles the 402 challenge, signs a gasless EIP-3009 transfer, returns the deliverable and settlement proof. |
 
-Three of the four cost nothing to run. Read the catalog, route the call, and check
+Three of the five cost nothing to run. Read the catalog, route the call, and check
 what you received without paying anyone — including without paying us.
 
 ## Install
 
 ```bash
-npx skills add craigmbrown/blindoracle-skills                              # all four
+npx skills add craigmbrown/blindoracle-skills                              # all five
 npx skills add craigmbrown/blindoracle-skills --skill verify-blindoracle-receipt
 ```
 
@@ -50,7 +51,8 @@ Copyright (c) 2026 Craig M. Brown. All rights reserved.
 
 ## Claude plugin
 
-The Claude plugin lives in [`claude-plugin/`](claude-plugin/). It carries only the two skills that
-never move money (`bo-catalog`, `verify-blindoracle-receipt`) plus the BlindOracle MCP connector.
-Those two skill folders are copies of the ones at the repository root; after editing a root copy,
+The Claude plugin lives in [`claude-plugin/`](claude-plugin/). It carries three skills that never
+move money on their own (`bo-catalog`, `verify-blindoracle-receipt`, `prove-a-delegation`; the last
+describes paid MCP calls that the caller's own wallet or starter credit answers) plus the BlindOracle
+MCP connector. Those skill folders are copies of the ones at the repository root; after editing a root copy,
 run `./sync-plugin.sh` so the plugin stays identical.

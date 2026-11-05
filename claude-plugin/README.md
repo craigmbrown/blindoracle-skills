@@ -33,6 +33,15 @@ Paste a BlindOracle deliverable and ask Claude to check it. The `verify-blindora
 skill recomputes the SHA-256 on your machine and can confirm the payment transaction on Base
 through the public RPC, with no key, no account and no call to BlindOracle.
 
+## Record a hand-off to another agent
+
+The `prove-a-delegation` skill walks Claude through BlindOracle's proof-of-delegation chain:
+record → accept → deliver → close, each step a credential signed by `did:web:craigmbrown.com`
+that anyone can check at `https://api.craigmbrown.com/v1/delegations/<id>`. The steps are paid
+MCP calls (one bundle payment covers all four) answered by the caller's own wallet or starter credit.
+A chain proves who paid and what each side presented, not either party's off-platform identity,
+human presence or the quality of the work. Delegation tokens are bearer secrets.
+
 ## Data
 
 The connector sends the tool name and the arguments you give it to `api.craigmbrown.com`. The
