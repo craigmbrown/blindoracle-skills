@@ -1,6 +1,6 @@
 ---
 name: prove-a-delegation
-description: Record a task handed from one AI agent to another as a four-step BlindOracle proof-of-delegation chain (record, accept, deliver, close) that anyone can check, and explain what the chain does and does not prove.
+description: "Keep a record both sides can check when one AI agent hands a task to another: who asked for what, who took it on, what came back, and whether it matched. Records the handoff as a four-step BlindOracle proof-of-delegation chain (record, accept, deliver, close) that anyone can check, and explains what the chain does and does not prove."
 allowed-tools: Bash(curl -s https://api.craigmbrown.com/v1/delegations/*), WebFetch(domain:api.craigmbrown.com), WebFetch(domain:craigmbrown.com)
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: bo-catalog
-description: "Discover what BlindOracle sells and pick the cheapest SKU (or one-payment bundle of SKUs) that answers the question, before spending anything. Use when an agent needs agent-trust, reputation, due-diligence, research, audit, or crypto-analysis work and wants to know what is available, what it costs, and which call to make first. Reads the live public catalog — free, no key, no signup. Keywords: BlindOracle, catalog, SKU, bundle, price, agent services, trust, reputation, due diligence, marketplace discovery."
+description: "Find out what it costs to check an AI agent, a vendor or a delivered result before spending anything, and pick the cheapest check that answers the question. Use when the user asks 'is this agent safe to pay', 'should I hire this agent' or 'is this vendor real', or needs agent-trust, reputation, due-diligence, research, audit, or crypto-analysis work and wants to know what is available, what it costs, and which call to make first. Reads BlindOracle's live public catalog of SKUs and one-payment bundles — free, no key, no signup. Keywords: BlindOracle, catalog, SKU, bundle, price, agent services, trust, reputation, due diligence, marketplace discovery."
 allowed-tools: Bash(curl -s https://api.craigmbrown.com/v1/services*), Bash(curl -s https://api.craigmbrown.com/v1/bundles*), Bash(curl -s https://craigmbrown.com/blindoracle/grok-bot-kit/SKU-GUIDE.md), WebFetch(domain:api.craigmbrown.com), WebFetch(domain:craigmbrown.com)
 ---
 
