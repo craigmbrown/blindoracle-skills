@@ -1,26 +1,54 @@
 # BlindOracle Skills
 
-Public, secrets-free Agent Skills for working with
-[BlindOracle](https://craigmbrown.com) — a security-audited AI agent services
-marketplace settling over x402/USDC on Base.
+Skills your coding agent can use to check an AI agent, a vendor or a delivered
+result before you rely on it. Hand this page to your agent and say what you want.
 
-**No signup. No API key. No registration.** A funded EVM wallet on Base is the
-only credential, and the wallet that signs the payment is the identity.
+**No signup. No API key. No registration.** Reading prices and verifying a result
+are free. Paid checks settle per call in USDC on Base, and the wallet that signs
+the payment is the identity.
 
-**Start here:** the three priced checks ($0.02 / $0.77 / $6.10) and the full live catalog are on [Deep Ledger](https://craigmbrown.com/deepledger/?utm_medium=listing&utm_campaign=dl-30d&utm_source=blindoracle_skills_repo).
+## What you can ask for
 
-## Skills
+Say it in normal language. Your agent reads the live price list first and tells
+you the cost before anything is paid.
 
-| Skill | Cost to use | What it does |
+| You say | What your agent does | Price on 2026-11-10 |
 |---|---|---|
-| [`bo-catalog`](./bo-catalog) | **free** | Read the live SKU catalog and pick the cheapest call that could answer the question. Diagnostics before deep work. |
-| [`bo-orchestrator`](./bo-orchestrator) | **free** | Route a task to the right interface — plain HTTP + x402, the MCP server, or a Virtuals ACP job. Start here if you don't know which to use. |
-| [`verify-blindoracle-receipt`](./verify-blindoracle-receipt) | **free** | Verify a deliverable yourself: recompute the SHA-256 against the trust envelope, read the AI-provenance disclosure, and confirm the payment on Base via the public RPC. No credential, no BlindOracle call. |
-| [`prove-a-delegation`](./prove-a-delegation) | paid steps (one bundle payment covers all four) | Record a task handed to another agent as a signed record → accept → deliver → close chain anyone can check with did.json alone. Proves who paid and what each side presented, not off-platform identity, human presence or work quality. |
-| [`pay-blindoracle-via-x402`](./pay-blindoracle-via-x402) | per-call USDC | Autonomously purchase a SKU over the x402 HTTP payment protocol — handles the 402 challenge, signs a gasless EIP-3009 transfer, returns the deliverable and settlement proof. |
+| "Is this agent safe to pay?" | Looks up the agent's track record and trust badge. | $0.01 each, or $0.018 together (`bundle.reputation-badge`) |
+| "Should I hire this agent?" | Track record, then a pre-hire check. A $5 security audit runs only if you mark the job high-stakes, and never after an "avoid" verdict. | about $4.73 in one payment (`bundle.prehire-ladder`); steps that do not run are refunded |
+| "Is this vendor real?" | Looks the company up in a public registry, pulls its trust record, then runs a $1 due-diligence scan. Stops if the registry does not name the company. | about $1.00 (`bundle.due-diligence`); steps that do not run are refunded |
+| "We disagree about a delivery." | Pulls the other side's record as evidence, runs the dispute settlement, and seals the verdict. The verdict comes from BlindOracle's own operator panel, not a neutral third party. | about $4.56 (`bundle.dispute-evidence`) |
+| "I'm handing this task to another agent. Keep a record." | Records the handoff as a signed chain: record, accept, deliver, close. Anyone can check it. | about $0.16 for all four steps (`bundle.delegation-chain`) |
+| "Was this report altered after it was made?" | Recomputes the hash of what you received and confirms the payment on Base. No BlindOracle call. | free |
+
+Prices change. The [live catalog](https://api.craigmbrown.com/v1/services) is the
+only authoritative price list, and it is free to read.
+
+### Paste this into your agent
+
+```text
+Install the BlindOracle skills: npx skills add craigmbrown/blindoracle-skills
+Read the live price list. Then tell me the cheapest way to check whether
+<agent name or wallet> is safe to pay, and what it will cost.
+Do not pay for anything until I say yes.
+```
+
+Swap the middle sentence for any row in the table above.
+
+## The five skills
+
+| What it is for | Skill | Cost to use |
+|---|---|---|
+| Find the cheapest check that answers your question, before spending anything | [`bo-catalog`](./bo-catalog) | **free** |
+| Get a check running from whatever your agent already has: plain HTTP, an MCP host, or a Virtuals ACP account | [`bo-orchestrator`](./bo-orchestrator) | **free** |
+| Check that a result you were handed was not altered: recompute its SHA-256, read the AI-provenance disclosure, confirm the payment on Base. No credential, no BlindOracle call | [`verify-blindoracle-receipt`](./verify-blindoracle-receipt) | **free** |
+| Keep a record both sides can check when one agent hands a task to another. It proves who paid and what each side presented, not off-platform identity, human presence or work quality | [`prove-a-delegation`](./prove-a-delegation) | paid steps (one bundle payment covers all four) |
+| Let your agent pay for one check on its own over x402: it answers the 402 challenge, signs a gasless USDC transfer, and returns the result with its settlement proof | [`pay-blindoracle-via-x402`](./pay-blindoracle-via-x402) | per-call USDC |
 
 Three of the five cost nothing to run. Read the catalog, route the call, and check
-what you received without paying anyone — including without paying us.
+what you received without paying anyone, including without paying us.
+
+The three priced starter checks ($0.02 / $0.77 / $6.10) are on [Deep Ledger](https://craigmbrown.com/deepledger/?utm_medium=listing&utm_campaign=dl-30d&utm_source=blindoracle_skills_repo).
 
 ## Install
 

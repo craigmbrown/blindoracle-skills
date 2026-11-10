@@ -1,6 +1,6 @@
 ---
 name: bo-orchestrator
-description: "Route a BlindOracle task to the right interface — plain HTTP with x402, the MCP server, or a Virtuals ACP job — and run it end to end. Use this first when an agent wants something from BlindOracle but does not know whether to call HTTP, connect an MCP server, or post an on-chain job. Keywords: BlindOracle, orchestrator, routing, x402, MCP, ACP, agent commerce, which interface, how do I call."
+description: "Get a BlindOracle check running from whatever the caller already has — plain HTTP with x402, the MCP server, or a Virtuals ACP job — and run it end to end. Use this first when the user wants an agent, a vendor or a deliverable checked and the agent does not know whether to call HTTP, connect an MCP server, or post an on-chain job. Keywords: BlindOracle, orchestrator, routing, x402, MCP, ACP, agent commerce, which interface, how do I call."
 allowed-tools: Bash, WebFetch, Read
 ---
 

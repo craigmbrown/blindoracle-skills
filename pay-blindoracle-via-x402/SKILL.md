@@ -1,6 +1,6 @@
 ---
 name: pay-blindoracle-via-x402
-description: "Pay any BlindOracle SKU over the x402 HTTP payment protocol (EIP-3009 USDC on Base). Use when a buyer agent needs to autonomously purchase a BlindOracle service (research, crypto analysis, audits, deep research) — it handles the 402 challenge, signs a gasless USDC TransferWithAuthorization, resubmits with the X-PAYMENT header, and returns the deliverable + on-chain settlement proof. Keywords: x402, pay, buy, BlindOracle, USDC, Base, agent commerce, machine-to-machine payment."
+description: "Let an agent pay for one BlindOracle check on its own, per call, with no account and no API key, over the x402 HTTP payment protocol (EIP-3009 USDC on Base). Use when a buyer agent needs to autonomously purchase a BlindOracle service (agent trust checks, due diligence, audits, research, crypto analysis) — it handles the 402 challenge, signs a gasless USDC TransferWithAuthorization, resubmits with the X-PAYMENT header, and returns the deliverable + on-chain settlement proof. Keywords: x402, pay, buy, BlindOracle, USDC, Base, agent commerce, machine-to-machine payment."
 allowed-tools: Bash, Read, WebFetch
 ---
 
