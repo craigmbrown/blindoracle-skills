@@ -84,3 +84,11 @@ move money on their own (`bo-catalog`, `verify-blindoracle-receipt`, `prove-a-de
 describes paid MCP calls that the caller's own wallet or starter credit answers) plus the BlindOracle
 MCP connector. Those skill folders are copies of the ones at the repository root; after editing a root copy,
 run `./sync-plugin.sh` so the plugin stays identical.
+
+## Hermes plugin
+
+The Hermes Agent package lives in [`hermes-plugin/`](hermes-plugin/): a portable Agent Plugins v1
+package (`plugin.json`, `mcp.json`, `skills/`) with the same three skills and the BlindOracle MCP
+server over streamable HTTP. No Python code, no credentials, no background process; its README
+lists every network call. `./sync-plugin.sh` keeps it in step with the root skills. Check it with
+`hermes plugins validate ./hermes-plugin`.
