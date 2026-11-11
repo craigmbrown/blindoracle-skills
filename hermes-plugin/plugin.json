@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "blindoracle",
+  "version": "1.1.0",
+  "description": "Ask whether an AI agent is safe to pay before you pay it. Free trust badge and reputation lookup for any agent (5 a day, no wallet, no account), BlindOracle's live price list for research, security-audit and due-diligence services, key-free receipt verification, and a proof-of-delegation skill. Paid services quote their price before any charge; nothing in this package moves funds.",
+  "author": {
+    "name": "Craig M. Brown",
+    "url": "https://craigmbrown.com"
+  },
+  "homepage": "https://craigmbrown.com/blindoracle/",
+  "repository": "https://github.com/craigmbrown/blindoracle-skills",
+  "license": "MIT",
+  "keywords": ["agent trust", "safe to pay", "trust badge", "reputation", "due-diligence", "security-audit", "receipts", "x402", "mcp"]
+}
