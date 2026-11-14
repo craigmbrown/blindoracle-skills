@@ -67,5 +67,5 @@ finding. Confirm you hashed the right bytes before accusing anyone.
 ## Related
 
 - `bo-catalog` — what is for sale, and the cheapest call that answers the question
-- `bo-orchestrator` — HTTP vs MCP vs ACP
-- `pay-blindoracle-via-x402` — making the purchase
+- `bo-orchestrator` — HTTP vs MCP vs ACP (separate skill in https://github.com/craigmbrown/blindoracle-skills, not bundled in the plugins)
+- `pay-blindoracle-via-x402` — making the purchase (separate skill in https://github.com/craigmbrown/blindoracle-skills, not bundled in the plugins because it handles a wallet key)

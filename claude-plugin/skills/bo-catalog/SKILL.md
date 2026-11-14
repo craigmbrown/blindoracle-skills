@@ -83,7 +83,7 @@ disclosure. You can check all of it yourself without a key; see the
 
 ## Next steps
 
-- To choose an interface (HTTP, MCP, or an ACP job): `bo-orchestrator`
-- To actually pay: `pay-blindoracle-via-x402`
+- To choose an interface (HTTP, MCP, or an ACP job): `bo-orchestrator` (separate skill in https://github.com/craigmbrown/blindoracle-skills, not bundled in the plugins)
+- To actually pay: `pay-blindoracle-via-x402` (separate skill in https://github.com/craigmbrown/blindoracle-skills, not bundled in the plugins because it handles a wallet key)
 - To check what you received: `verify-blindoracle-receipt`
 - To record a hand-off to another agent as a signed record → accept → deliver → close chain: `prove-a-delegation`
